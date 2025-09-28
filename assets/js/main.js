@@ -4,18 +4,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const playMusicOnce = () => {
     music.play().catch(e => console.log("Music play blocked : ", e));
-    document.removeEventListener('click', playMusicOnce);
+    window.removeEventListener('click', playMusicOnce);
   };
 
   window.addEventListener('click', playMusicOnce);
 
   const messages = [
-    "The star are beautiful, aren't they?",
-    "Just like you.",
-    "I hope your day is as wonderful as you are.",
-    "Keep shining bright!",
-    "Remember, you're never alone under the star."
+    "Mon cœur bat pour toi à chaque instant.",
+    "Tu es la lumière de mes jours sombres.",
+    "Chaque pensée de toi m’emplit de joie.",
+    "Sans toi, le monde semble vide.",
+    "Ton sourire est mon plus beau trésor.",
+    "Je t’aime plus que les mots ne peuvent le dire.",
+    "Tes yeux sont des étoiles qui guident mon âme.",
+    "Chaque moment passé avec toi est un poème.",
+    "Ton rire est ma mélodie préférée.",
+    "Je veux passer l’éternité à tes côtés.",
+    "Tu es l’essence même de mon bonheur.",
+    "Mon amour pour toi grandit chaque jour.",
+    "Tu es la raison de mes rêves les plus doux.",
+    "Rien n’a de sens sans toi près de moi.",
+    "Ton amour est mon refuge et ma force.",
+    "Je me perds dans la beauté de ton âme.",
+    "Chaque battement de mon cœur t’appartient.",
+    "Être avec toi rend la vie magique.",
+    "Je t’aimerai jusqu’au dernier souffle.",
+    "Avec toi, j’ai trouvé mon chez-moi."
   ];
+
 
   const fallingTexts = [];
 
@@ -121,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(() => {
     if (Math.random() < 0.8)
       createFallingText();
-  });
+  }, 2000);
 
   function animate() {
 
