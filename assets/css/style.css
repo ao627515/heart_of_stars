@@ -59,7 +59,7 @@ body {
   color: white;
   font-size: clamp(1rem, 3vw, 1.5rem);
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  /* opacity: 0; */
+  opacity: 0;
   animation: fadeInMessage 1s ease-in-out 1s forwards;
 }
 
